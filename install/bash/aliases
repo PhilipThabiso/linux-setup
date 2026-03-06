@@ -1,0 +1,20 @@
+alias wd1="cd ~/linux-setup/install"
+
+alias proj-go="cd ~/proj/go"
+alias proj-go1="cd ~/proj/go/add_tools/"
+
+alias gotest="cd /home/philip/proj/go/go-playgruond"
+
+# alias ya="yazi"
+
+
+alias ch-term="open /home/philip/linux-setup/cheatsheets/ch-term.md"
+
+function ya() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
