@@ -2,10 +2,6 @@
 
 cd "$(dirname "$0")" || exit
 
-. ./install-ghostty.sh
-. ./install-stow.sh
-. ./install-chromium.sh
-. ./yazi/install-yazi.sh
 . ./yazi/install-override-yazi.sh
 . ./hypr/install-overrides-hyperland.sh
 . ./nvim/install-override-nvim.sh

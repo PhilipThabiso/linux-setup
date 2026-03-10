@@ -5,12 +5,14 @@ alias proj-go1="cd ~/proj/go/add_tools/"
 
 alias gotest="cd /home/philip/proj/go/go-playgruond"
 
-# alias ya="yazi"
-
+alias lg="lazygit"
 
 alias ch-term="open /home/philip/linux-setup/cheatsheets/ch-term.md"
 
-function ya() {
+alias upd-all="/home/philip/linux-setup/install/install-all.sh"
+alias upd-set="/home/philip/linux-setup/install/install-settings.sh"
+
+function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
