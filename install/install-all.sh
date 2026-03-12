@@ -1,16 +1,13 @@
 #!/bin/sh
 
-cd "$(dirname "$0")" || exit
 
-. ./install-ghostty.sh
-. ./install-stow.sh
-. ./install-chromium.sh
-. ./yazi/install-yazi.sh
-. ./yazi/install-override-yazi.sh
-. ./hypr/install-overrides-hyperland.sh
-. ./nvim/install-override-nvim.sh
-. ./bash/install-overrides-bashrc.sh
+INSTALL_ALL_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+. "$INSTALL_ALL_DIR/install-ghostty.sh"
+. "$INSTALL_ALL_DIR/install-stow.sh"
+. "$INSTALL_ALL_DIR/install-chromium.sh"
+. "$INSTALL_ALL_DIR/install-yazi.sh"
+. "$INSTALL_ALL_DIR/install-gnumeric.sh"
 
 
 

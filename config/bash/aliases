@@ -7,10 +7,11 @@ alias gotest="cd /home/philip/proj/go/go-playgruond"
 
 alias lg="lazygit"
 
-alias ch-term="open /home/philip/linux-setup/cheatsheets/ch-term.md"
+alias ch-term="nvim /home/philip/linux-setup/cheatsheets/ch-term.md"
+alias ch-git="nvim /home/philip/linux-setup/cheatsheets/ch-git.md"
 
-alias upd-all="/home/philip/linux-setup/install/install-all.sh"
-alias upd-set="/home/philip/linux-setup/install/install-settings.sh"
+alias upd-all="/home/philip/linux-setup/full-setup.sh"
+alias upd-conf="/home/philip/linux-setup/config/update-config-all.sh"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"

@@ -1,0 +1,5 @@
+source /home/philip/linux-setup/config/bash/aliases
+
+source /home/philip/linux-setup/config/bash/theme-fzf
+
+
