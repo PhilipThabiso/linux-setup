@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 OVERIDE_NVIM_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 . "$OVERIDE_NVIM_DIR/config/update-config-options.sh"

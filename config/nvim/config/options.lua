@@ -3,3 +3,5 @@
 -- Add any additional options here
 vim.opt.relativenumber = true
 vim.opt.number = true
+-- vim.opt.termguicolors = true
+-- vim.g.onedark_config = { style = "darker" }

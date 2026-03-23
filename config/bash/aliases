@@ -9,6 +9,9 @@ alias lg="lazygit"
 
 alias ch-term="nvim /home/philip/linux-setup/cheatsheets/ch-term.md"
 alias ch-git="nvim /home/philip/linux-setup/cheatsheets/ch-git.md"
+alias ch-go="nvim /home/philip/linux-setup/cheatsheets/ch-go.md"
+alias ch-sh="nvim /home/philip/linux-setup/cheatsheets/ch-sh.md"
+alias ch-way="nvim /home/philip/linux-setup/cheatsheets/ch-way.md"
 
 alias upd-all="/home/philip/linux-setup/full-setup.sh"
 alias upd-conf="/home/philip/linux-setup/config/update-config-all.sh"
@@ -21,3 +24,5 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+alias np="nvim /home/philip/Documents/notepad.md"
