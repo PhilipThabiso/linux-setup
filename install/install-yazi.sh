@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yay -S --noconfirm --needed yazi
- 
+sudo pacman -S --noconfirm --needed yazi
+
 
 

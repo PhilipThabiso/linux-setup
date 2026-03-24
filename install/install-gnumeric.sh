@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yay -S --noconfirm --needed gnumeric
+sudo pacman -S --noconfirm --needed gnumeric
 
  
 

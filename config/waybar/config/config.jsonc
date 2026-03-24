@@ -12,7 +12,6 @@
     "bluetooth",
     "network",
     "pulseaudio",
-    // "group/cpu-details",
     "cpu",
     "battery"
   ],

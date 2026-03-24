@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yay -S --noconfirm --needed gimp
+sudo pacman -S --noconfirm --needed gimp
 
  
 
