@@ -1,0 +1,33 @@
+1. Minimal Arch setup
+
+Install:
+
+sudo pacman -S arduino-cli
+
+
+Add your user to serial-access group:
+
+sudo usermod -aG uucp "$USER"
+
+Then log out and back in.
+
+
+Initialize config:
+
+arduino-cli config init
+arduino-cli config dump
+
+
+Update board index:
+
+arduino-cli core update-index
+
+
+For standard Arduino boards:
+
+arduino-cli core install arduino:avr
+
+
+Check connected boards:
+
+arduino-cli board list

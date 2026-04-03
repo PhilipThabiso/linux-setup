@@ -31,6 +31,7 @@ return {
 					},
 				},
 				bashls = {},
+				arduino_language_server = {},
 			},
 		},
 	},
