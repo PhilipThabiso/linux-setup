@@ -11,7 +11,7 @@ arduino-cli config set board_manager.additional_urls \
 
 # Update + install ESP32 core
 arduino-cli core update-index
-arduino-cli core install esp32:esp32
+arduino-cli core install esp8266:esp8266
 
 # See connected board/port
 arduino-cli board list

@@ -53,6 +53,7 @@ read_ram_stats() {
   mem_used_kb=$((mem_total_kb - mem_avail_kb))
 
   mem_used_gb=$(awk -v kb="$mem_used_kb" 'BEGIN { printf "%.2f", kb / 1000000 }')
+  mem_total_gb=$(awk -v kb="$mem_total_kb" 'BEGIN { printf "%.2f", kb / 1000000 }')
   mem_used_percent=$((mem_used_kb * 100 / mem_total_kb))
 
   get_colors "$mem_used_percent"
@@ -63,8 +64,8 @@ read_ram_stats() {
   # printf "total memory percent: %s\n" "$mem_used_percent"
 
   printf "<span foreground='%s'></span>" "$CHIP_BG"
-  printf "<span background='%s' foreground='%s'>Ram:%sGB/%02d%%</span>" \
-    "$CHIP_BG" "$CHIP_FG" "$mem_used_gb" "$mem_used_percent"
+  printf "<span background='%s' foreground='%s'>Ram:%sGB/%sGB</span>" \
+    "$CHIP_BG" "$CHIP_FG" "$mem_used_gb" "$mem_total_gb"
   printf "<span foreground='%s'></span> " "$CHIP_BG"
 
   #
