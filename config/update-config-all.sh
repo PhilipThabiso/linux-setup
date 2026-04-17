@@ -7,6 +7,7 @@ UPDATE_CONF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "$UPDATE_CONF_DIR/bash/install-overrides-bashrc.sh"
 . "$UPDATE_CONF_DIR/hypr/install-overrides-hyperland.sh"
 . "$UPDATE_CONF_DIR/hypr/install-overrides-hyperland-bindings.sh"
+. "$UPDATE_CONF_DIR/hypr/update-hyperidle.sh"
 . "$UPDATE_CONF_DIR/nvim/update-config-nvim.sh"
 . "$UPDATE_CONF_DIR/waybar/update-config-waybar.sh"
 # . "$UPDATE_CONF_DIR/yazi/update-config-yazi.sh"
@@ -15,4 +16,4 @@ UPDATE_CONF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 sudo sh "$UPDATE_CONF_DIR/wifi/update-config-wifi.sh"
 
 # Call the rules script with sudo
-sudo sh "$UPDATE_CONF_DIR/zsa-keyboards/update-config-zsa.sh"
+sudo sh "$UPDATE_CONF_DIR/zsa-keyboards/update-config-zsa.sh
