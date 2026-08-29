@@ -28,7 +28,14 @@ fi
 # copying from-to
 cp "$MY_CONFIG" "$WAYBAR_CONFIG"
 
+# Restart waybar to apply changes
+killall waybar || true
 
-echo "Success: $WAYBAR_CONFIG has been updated with your personal settings."
+nohup waybar >/tmp/waybar.log 2>&1 &
+
+
+echo "Success: $WAYBAR_CONFIG has been updated and waybar restarted."
+
+
 
 
