@@ -1,115 +1,89 @@
-Git Cheat Sheet
+# Git Cheat Sheet
 
-# Getting Started
+### Getting Started
+**Start New Repo**
+`git init`
 
+**Clone Repo**
+`git clone <url>`
 
-Start a new repo:
+---
 
-git init
+### Staging & Committing
+**Stage Specific File**
+`git add <file>`
 
-Clone a repo:
+**Stage All Changes**
+`git add .`
 
-git clone <url>
+**Check Status**
+`git status`
 
-# taging & Committing
+**Commit with Message**
+`git commit -m 'message'`
 
+**Amend Last Commit**
+`git commit --amend`
 
-Stage specific file:
+---
 
-git add <file>
+### Branching
+**List Branches**
+`git branch`
 
-Stage all changes:
+**Switch Branch**
+`git switch <name>`
 
-git add .
+**Create and Switch Branch**
+`git switch -c <name>`
 
-Check status:
+**Delete Branch**
+`git branch -d <name>`
 
-git status
+---
 
-Commit with message:
+### Changes & Diffs
+**Show Unstaged Changes**
+`git diff`
 
-git commit -m 'message'
+**Show Staged Changes**
+`git diff --staged`
 
-Amend last commit:
+**Short History Log**
+`git log --oneline`
 
-git commit --amend
+---
 
-# Branching
+### Undo & Discard
+**Discard Unstaged Changes**
+`git restore <file>`
 
+**Unstage a File**
+`git reset <file>`
 
-List branches:
+**Wipe All Local Changes**
+`git reset --hard`
 
-git branch
+**Undo Last Commit (Keep Files)**
+`git reset HEAD^`
 
-Switch branch:
+**Stash Changes**
+`git stash`
 
-git switch <name>
+---
 
-Create and switch branch:
+### Remote Operations
+**Add a Remote**
+`git remote add origin <url>`
 
-git switch -c <name>
+**Push to Origin**
+`git push origin <branch>`
 
-Delete branch:
+**Push and Set Tracking**
+`git push -u origin <branch>`
 
-git branch -d <name>
+**Pull Changes**
+`git pull`
 
-# Changes & Diffs
-
-
-Show unstaged changes:
-
-git diff
-
-Show staged changes:
-
-git diff --staged
-
-Short history log:
-
-git log --oneline
-
-# Undo & Discard
-
-
-Discard unstaged changes:
-
-git restore <file>
-
-Unstage a file:
-
-git reset <file>
-
-Wipe all local changes:
-
-git reset --hard
-
-Undo last commit (keep files):
-
-git reset HEAD^
-
-Stash changes:
-
-git stash
-
-# Remote Operations
-
-
-Add a remote:
-
-git remote add origin <url>
-
-Push to origin:
-
-git push origin <branch>
-
-Push and set tracking:
-
-git push -u origin <branch>
-
-Pull changes:
-
-git pull
-
-Fetch changes:
-
-git fetch
+**Fetch Changes**
+`git fetch`it fetch

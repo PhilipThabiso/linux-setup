@@ -2,55 +2,58 @@
 
 ### Sessions
 **New Session**
-`tmux new -s <name>`
+tmux new -s name
 
 **Attach Session**
-`tmux a -t <name>`
+tmux a -t name
 
 **List Sessions**
-`tmux ls`
+tmux ls
 
 **Detach**
-`Ctrl+b` `d`
+Ctrl+b d
 
 **Rename Session**
-`Ctrl+b` `$`
+Ctrl+b $
 
 ---
 
 ### Windows
 **Create Window**
-`Ctrl+b` `c`
+Ctrl+b c
 
 **Next Window**
-`Ctrl+b` `n`
+Ctrl+b n
 
 **Previous Window**
-`Ctrl+b` `p`
+Ctrl+b p
 
 **Select by Index**
-`Ctrl+b` `<0-9>`
+Ctrl+b <0-9>
 
 **Rename Window**
-`Ctrl+b` `,`
+Ctrl+b ,
 
 **Close Window**
-`Ctrl+b` `&`
+Ctrl+b &
 
 ---
 
 ### Panes
 **Vertical Split**
-`Ctrl+b` `%`
+Ctrl+b %
 
 **Horizontal Split**
-`Ctrl+b` `"`
+Ctrl+b "
 
 **Navigate Panes**
-`Ctrl+b` `<Arrow Keys>`
+Ctrl+b <Arrow Keys>
 
 **Toggle Zoom**
-`Ctrl+b` `z`
+Ctrl+b z
 
 **Close Pane**
-`Ctrl+b` `x`
+Ctrl+b x
+
+**Vertical horizontal**
+Ctrl+b Spacebar

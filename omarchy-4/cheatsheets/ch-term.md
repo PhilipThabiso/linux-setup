@@ -1,20 +1,55 @@
 # Terminal Cheat Sheet
 
-pwd         # print working directory
-ls          # list files in directory
-cd          # change directory
-~           # home directory
-..          # up one directory
--           # previous working directory
-help        # get help
--h          # get help
---help      # get help
-man         # manual
-cat         # output the contents of a file
-mkdir       # create new directory
-open        # open a file with the associated program, a directory with Finder, or a URL with the default web browser
-ps          # list all running processes
-kill        # terminate existing process
-rmd         # permanently delete file
-rmdir       # remove directory
+## Navigation
+### Print Working Directory
+pwd
 
+### List Files
+ls
+
+### Change Directory
+cd
+
+### Home Directory
+~
+
+### Up One Directory
+..
+
+### Previous Working Directory
+-
+
+## Help & Documentation
+### Get Help
+help
+
+### Help Flag
+-h or --help
+
+### Manual Page
+man
+
+## File & Directory Operations
+### Output File Contents
+cat
+
+### Create Directory
+mkdir
+
+### Open File/URL
+open
+
+### Permanently Delete File
+rm
+
+### Remove Directory
+rmdir
+
+---
+
+## Process Management
+### List Processes
+ps
+
+### Terminate Process
+kill
