@@ -1,0 +1,31 @@
+alias wd1="cd ~/Projects/"
+alias wd2="cd ~/linux-setup/install"
+
+
+alias proj-go="cd ~/proj/go"
+alias proj-go1="cd ~/proj/go/add_tools/"
+
+alias gotest="cd /home/philip/proj/go/go-playgruond"
+
+alias lg="lazygit"
+
+alias ch-term="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-term.md"
+alias ch-git="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-git.md"
+alias ch-gh="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-gh.md"
+alias ch-go="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-go.md"
+alias ch-sh="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-sh.md"
+alias ch-way="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-way.md"
+
+alias upd-all="/home/philip/linux-setup/comarchy-4/full-setup.sh"
+alias upd-conf="/home/philip/linux-setup/comarchy-4/config/update-config-all.sh"
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+alias np="nvim /home/philip/Documents/notepad.md"
