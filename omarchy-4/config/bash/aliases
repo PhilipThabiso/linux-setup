@@ -1,13 +1,14 @@
 alias wd1="cd ~/Projects/"
 alias wd2="cd ~/linux-setup/install"
 
+alias lg="lazygit"
+alias che="chezmoi"
 
 alias proj-go="cd ~/proj/go"
 alias proj-go1="cd ~/proj/go/add_tools/"
 
 alias gotest="cd /home/philip/proj/go/go-playgruond"
 
-alias lg="lazygit"
 
 alias ch-term="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-term.md"
 alias ch-git="nvim /home/philip/linux-setup/omarchy-4/cheatsheets/ch-git.md"

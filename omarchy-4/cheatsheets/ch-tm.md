@@ -1,59 +1,74 @@
 # tmux Cheatsheet
 
-### Sessions
-**New Session**
+## Sessions
+### New Session
 tmux new -s name
 
-**Attach Session**
+### Attach Session
 tmux a -t name
 
-**List Sessions**
+### List Sessions
 tmux ls
 
-**Detach**
+### Detach
 Ctrl+b d
 
-**Rename Session**
+### Rename Session
 Ctrl+b $
+
+### Interactive Session List
+Ctrl+b s
 
 ---
 
-### Windows
-**Create Window**
+## Windows
+### Create Window
 Ctrl+b c
 
-**Next Window**
+### Next Window
 Ctrl+b n
 
-**Previous Window**
+### Previous Window
 Ctrl+b p
 
-**Select by Index**
+### Select by Index
 Ctrl+b <0-9>
 
-**Rename Window**
+### Rename Window
 Ctrl+b ,
 
-**Close Window**
+### Close Window
 Ctrl+b &
 
 ---
 
-### Panes
-**Vertical Split**
+## Panes
+### Vertical Split
 Ctrl+b %
 
-**Horizontal Split**
+### Horizontal Split
 Ctrl+b "
 
-**Navigate Panes**
+### Navigate Panes
 Ctrl+b <Arrow Keys>
 
-**Toggle Zoom**
+### Toggle Zoom
 Ctrl+b z
 
-**Close Pane**
+### Close Pane
 Ctrl+b x
 
-**Vertical horizontal**
+### Vertical horizontal
 Ctrl+b Spacebar
+
+### Resize Up 1 Cell
+Ctrl+b Alt+Up Arrow
+
+### Resize Down 1 Cell
+Ctrl+b Alt+Down Arrow
+
+### Resize Left 1 Cell
+Ctrl+b Alt+Left Arrow
+
+### Resize Right 1 Cell
+Ctrl+b Alt+Right Arrow
