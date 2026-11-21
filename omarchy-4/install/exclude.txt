@@ -1,0 +1,2 @@
+// this is an excample of how to exclude an install. ore else the install-all.sh i going to install all scripts. 
+//install-gimp.sh 
