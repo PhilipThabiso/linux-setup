@@ -19,6 +19,8 @@ if [ -f "$YAZI_CONFIG" ]; then
     echo "Warning: [$YAZI_CONFIG] Is overridden"
 fi
 
+mkdir -p "$(dirname "$YAZI_CONFIG")"
+
 # copying from-to
 cp "$MY_CONFIG" "$YAZI_CONFIG"
 
